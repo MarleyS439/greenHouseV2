@@ -25,12 +25,15 @@
 </head>
 
 <body>
-    <div class="overlay-header"></div>
 
     <header>
+
         <nav>
             <div class="logo">
-                <a href="#">Green House</a>
+                <a href="#">
+                    <img src="client/views/assets/images/logo.png" alt="Logo">
+                    <span>Green House</span>
+                </a>
             </div>
 
             <div class="links">
@@ -51,7 +54,48 @@
             </div>
 
         </nav>
+
+
+
+        <div class="box">
+
+            <div class="info">
+                <h1>Explore o futuro dos negócios comporativos</h1>
+            </div>
+
+            <form action="" method="get">
+
+                <p>Selecione imóveis entre Compra e Aluguel</p>
+                <div class="types">
+                    <div class="opt" id="optVenda">
+                        <label for="venda">Comprar</label>
+                        <input type="radio" name="transacao" id="venda" value="venda" checked>
+                    </div>
+
+                    <div class="opt">
+                        <label for="locacao">Alugar</label>
+                        <input type="radio" name="transacao" id="locacao" value="locacao">
+                    </div>
+                </div>
+
+                <div class="search-box">
+                    <input type="search" name="" id="" placeholder="Busque imóveis aqui">
+                    <button type="submit">
+                        <img src="client/views/assets/icons/search.svg" alt="Buscar">
+                        <span>Buscar</span>
+                    </button>
+
+                    <button type="button">
+                        <img src="client/views/assets/icons/settings.svg" alt="Filtros">
+                        <span>Filtrar</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
     </header>
+
+    <script type="text/javascript" src="client/views/assets/js/colorizeInputRadio.js"></script>
 </body>
 
 </html>
