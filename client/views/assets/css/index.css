@@ -1,0 +1,111 @@
+/* Imports */
+@import url(default.css);
+
+
+/* Media Queries */
+/* -------------------------------------------------------------------- */
+
+/* Query for small screens */
+@media screen and (max-width: 768px) {}
+
+/* Query for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Query for large screens */
+@media screen and (min-width: 1024px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/header-background.avif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ovarlay-header {
+        content: "";
+        background-color: #00000040;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-white);
+        padding: 5px 2%;
+    }
+
+    nav .logo a {
+        color: var(--color-gray);
+        color: var(--color-dark-blue);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    nav .links {
+        display: flex;
+    }
+
+    nav .links ul li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+    }
+
+    nav .links ul {
+        display: flex;
+    }
+
+    nav .links ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-gray);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    nav .links ul li a:hover {
+        color: var(--color-dark-blue);
+    }
+
+    nav .call {
+        display: flex;
+    }
+
+    nav .call a {
+        background-color: var(--color-blue);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-white);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 200ms ease-in-out;
+    }
+
+
+    nav .call a:hover {
+        background-color: var(--color-light-blue);
+    }
+
+    nav .call a img {
+        width: 25px;
+    }
+
+    nav .call a span {
+        margin-left: 5px;
+    }
+
+}

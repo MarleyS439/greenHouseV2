@@ -1,0 +1,43 @@
+@import url(fonts.css);
+
+:root {
+    /* Colors */
+    --color-blue: #05598d;
+    --color-white: #ffffff;
+    --color-dark-blue: #0E394a;
+    --color-light-blue: #478cb6;
+    --color-gray: #757575;
+
+    /* Font Archivo */
+    --font-archivo-italic: 'Archivo-Italic', sans-serif;
+    --font-archivo: 'Archivo', sans-serif;
+
+    /* Font Montserrat */
+    --font-montserrat-italic: 'Montserrat-Italic', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /* Font Lato */
+    --font-lato: 'Lato-Regular', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font-archivo);
+}
+
+h2 {
+    font-family: var(--font-lato);
+}
+
+h3 {
+    font-family: var(--font-montserrat);
+}
+
+::selection {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+} 
