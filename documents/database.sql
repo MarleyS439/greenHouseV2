@@ -1,12 +1,11 @@
 CREATE DATABASE IF NOT EXISTS dbGreenHouse;
-
 USE dbGreenHouse;
 
+-- USER
 CREATE TABLE tbUser (
     idUser INT PRIMARY KEY AUTO_INCREMENT,
-    nomeUser VARCHAR(60),
-    sexoUser CHAR(1),
-    cpfUser CHAR(11),
-    dataNascimentoUser DATE,
-    
+    nomeUser VARCHAR(60) NOT NULL,
+    emailUser VARCHAR(60) NOT NULL,
+    cpfUser CHAR(11) NOT NULL UNIQUE,
+    senhaUser VARCHAR(32) NOT NULL
 );
